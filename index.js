@@ -36,14 +36,15 @@ function viewCart() {
 
 
 function total() {
-	if (cart.length <= 0) {
-		return 0;
-    } else if (cart.length > 0) {
+	if (cart.length > 0) {
 		var cartTotal = 0;
 		for (var i = 0; i === cart.length; i++) {
 			cartTotal = cartTotal + cart[i].itemPrice;
         } 
 		return cartTotal;
+    } else if (cart.length <= 0) {
+		return 0;
+		console.log("no loop")
     }
 }
 
