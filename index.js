@@ -43,8 +43,8 @@ function total() {
         } 
 		return cartTotal;
     } else if (cart.length <= 0) {
+		console.log("no loop");
 		return 0;
-		console.log("no loop")
     }
 }
 
