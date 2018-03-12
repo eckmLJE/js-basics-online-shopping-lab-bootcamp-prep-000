@@ -28,7 +28,7 @@ function viewCart() {
   } else if (cartLength > 2) {
 		for (var i = 1; i < cartLength - 1; i++) {
 			line = line + ", " + cart[i].itemName + " at $" + cart[i].itemPrice;
-    } return line + ", and " + cart[cartLength - 1].itemName + " at $" + cart[cartLength - 1].itemPrice + ".";
+    } return line + " and " + cart[cartLength - 1].itemName + " at $" + cart[cartLength - 1].itemPrice + ".";
   } else {
 		return "Your shopping cart is empty.";
     }
