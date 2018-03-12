@@ -19,14 +19,13 @@ function addToCart(item) {
 }
 
 function viewCart() {
-	var cartLength = cart.length;
   var line = "In your cart, you have " + cart[0].itemName + " at $" + cart[0].itemPrice;
-	if (cartLength === 1) {
+	if (cart.length === 1) {
 		return line + "."
-  } else if (cartLength === 2) {
+  } else if (cart.length === 2) {
 		return line + " and " + cart[1].itemName + " at $" + cart[1].itemPrice + ".";
-  } else if (cartLength > 2) {
-		for (var i = 1; i < cartLength - 1; i++) {
+  } else if (cart.length > 2) {
+		for (var i = 1; i < cart.length - 1; i++) {
 			line = line + ", " + cart[i].itemName + " at $" + cart[i].itemPrice;
     } return line + " and " + cart[cartLength - 1].itemName + " at $" + cart[cartLength - 1].itemPrice + ".";
   } else {
