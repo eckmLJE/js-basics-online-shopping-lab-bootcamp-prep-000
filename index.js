@@ -27,7 +27,7 @@ function viewCart() {
 		for (var i = 1; i < cart.length - 1; i++) {
 			var line = "In your cart, you have " + cart[0].itemName + " at $" + cart[0].itemPrice;
 			line = line + ", " + cart[i].itemName + " at $" + cart[i].itemPrice;
-    } return line + " and " + cart[cartLength - 1].itemName + " at $" + cart[cartLength - 1].itemPrice + ".";
+    } return line + " and " + cart[cart.length - 1].itemName + " at $" + cart[cart.length - 1].itemPrice + ".";
   } else {
 		return "Your shopping cart is empty.";
     }
